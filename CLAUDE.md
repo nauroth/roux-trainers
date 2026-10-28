@@ -1,3 +1,8 @@
+## Android app (in progress)
+
+A native Android Roux trainer is being planned from this repo. Start at
+`docs/roux-android/HANDOFF.md`.
+
 ## Agent skills
 
 ### Issue tracker

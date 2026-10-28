@@ -5,9 +5,23 @@
         "source": "github",
         "repo": "DietrichGebert/ponytail"
       }
+    },
+    "android-skills": {
+      "source": {
+        "source": "github",
+        "repo": "android/skills"
+      }
+    },
+    "chrisbanes-skills": {
+      "source": {
+        "source": "github",
+        "repo": "chrisbanes/skills"
+      }
     }
   },
   "enabledPlugins": {
-    "ponytail@ponytail": true
+    "ponytail@ponytail": true,
+    "android-skills@android-skills": true,
+    "chrisbanes-skills@chrisbanes-skills": true
   }
 }
