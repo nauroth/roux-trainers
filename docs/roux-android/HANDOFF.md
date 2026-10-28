@@ -1,5 +1,8 @@
 # Handoff: native Android Roux trainer
 
+> **Moved (2026-10-28):** the app now lives in [nauroth/rouxtine](https://github.com/nauroth/rouxtine)
+> as "Rouxtine". Continue from its `docs/HANDOFF.md`; this copy is not updated.
+
 Written 2026-10-28 at the end of the research session. Read this first, then the research
 notes it links to. The notes hold the evidence; this file holds the decisions and the plan.
 
