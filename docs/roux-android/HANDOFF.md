@@ -35,6 +35,20 @@ web app.
   JS: its dense tables allocate 191–382 MB. Evidence:
   [roux-training-features.md §5](research/roux-training-features.md).
 
+- **Monetization (decided 2026-10-29):**
+  - The app is **free**, with **zero ads** and **zero telemetry**: no analytics, no
+    Crashlytics or Firebase, and nothing phoning home. The Play Data safety form must say "no
+    data collected".
+  - Every training function is free. Paid features are only **cosmetic** (a one-time
+    "Supporter" unlock for themes) or a **specific add-on** (possibly a paid smart-cube
+    module). Never paywall a trainer, the solver or stats.
+  - Purchases go through **Play Billing** only, and the app enables the 15% fee tier
+    (Account Group enrollment in Play Console).
+  - **Ko-fi lives on GitHub only.** No donate link or "donate" wording in the Play build,
+    and no link to a page that shows one: Google rejected StreetComplete and AnkiDroid for
+    exactly this.
+  - Evidence: [monetization.md](research/monetization.md).
+
 ## Open decisions: settle these with the user before building
 
 Run the `grilling` skill on these, one at a time, leading with the recommendation:
@@ -55,16 +69,12 @@ Run the `grilling` skill on these, one at a time, leading with the recommendatio
    built first.
 7. **Smart-cube priority.** Research put native BLE (GAN/MoYu/QiYi) and automatic Roux splits
    at v1. Ask whether the user owns a smart cube and which model.
-8. **Monetization.** Research ([monetization.md](research/monetization.md)) recommends:
-   - A free app, with everything ported from roux-trainers kept free.
-   - An optional one-time "Supporter" unlock (plus optional tip purchases) through Play
-     Billing, covering new extras only.
-   - The Ko-fi link only on GitHub, the website and a non-Play build flavor. Donation links
-     inside the Play build get rejected.
-   - No ads and no paid-upfront price. Note that a free app can never later become paid on
-     the same package name.
-
-   Ask onionhoney before monetizing a derivative. The user hasn't decided yet.
+8. **Personal or organization Play account.** Decide this before the first paid feature
+   ships. A personal account that sells anything shows the developer's **full address**
+   publicly on Google Play. An organization account (needs a registered business and a
+   D-U-N-S number) shows the business's legal address instead. Payments profiles reject PO
+   boxes. See the "Play account setup" section of
+   [monetization.md](research/monetization.md).
 
 ## What exists now (branch `claude/eloquent-davinci-0yl5z1`)
 
@@ -86,7 +96,7 @@ Run the `grilling` skill on these, one at a time, leading with the recommendatio
   0 s warm). Not wired up yet: hook it into a SessionStart hook or the environment setup
   script.
 - `.claude/settings.json`: plugins `ponytail`, `android-skills` (Google, official),
-  `chrisbanes-skills`. They load at session start.
+  `chrisbanes-skills`, `humanizer`. They load at session start.
 - `.claude/skills/`: vendored `md3e`, `material-design-3-ui`, `design-critique` and
   `accessibility-review`. Sources, commits and licenses are in `.claude/skills/VENDORED.md`.
 - `CLAUDE.md` and `docs/agents/`: the mattpocock-skills setup (GitHub Issues tracker, default
@@ -145,6 +155,7 @@ the first build.
 - **Design:** `md3e` (M3 Expressive API and theme generator), `material-design-3-ui` (design
   judgment), then `design-critique` and `accessibility-review` on Roborazzi PNGs, read with
   Android rules (see VENDORED.md).
+- **Writing:** `humanizer` for the Play Store listing, in-app text and release notes.
 - **Environment:** `session-start-hook` to wire `setup-android-sdk.sh`;
   `mattpocock-skills:research` for any new research question.
 

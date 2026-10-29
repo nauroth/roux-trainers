@@ -17,11 +17,18 @@
         "source": "github",
         "repo": "chrisbanes/skills"
       }
+    },
+    "humanizer": {
+      "source": {
+        "source": "github",
+        "repo": "blader/humanizer"
+      }
     }
   },
   "enabledPlugins": {
     "ponytail@ponytail": true,
     "android-skills@android-skills": true,
-    "chrisbanes-skills@chrisbanes-skills": true
+    "chrisbanes-skills@chrisbanes-skills": true,
+    "humanizer@humanizer": true
   }
 }
