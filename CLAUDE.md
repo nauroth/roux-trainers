@@ -1,7 +1,8 @@
 ## Android app (in progress)
 
-A native Android Roux trainer is being planned from this repo. Start at
-`docs/roux-android/HANDOFF.md`.
+The native Android Roux trainer lives in its own repo,
+[nauroth/rouxtine](https://github.com/nauroth/rouxtine) ("Rouxtine"). **Work there**, starting at
+its `docs/HANDOFF.md`. `docs/roux-android/` here is a research snapshot and is no longer updated.
 
 ## Agent skills
 

@@ -1,5 +1,10 @@
 # Handoff: native Android Roux trainer
 
+> **Moved:** the app lives in [nauroth/rouxtine](https://github.com/nauroth/rouxtine) as
+> "Rouxtine". Continue from its `docs/HANDOFF.md`; this copy is no longer updated. The
+> 2026-10-29 decisions recorded below (monetization, analytics, Play account, Humanizer) and
+> the notes `monetization.md` and `extra-skills.md` have been carried over there.
+
 Written 2026-10-28 at the end of the research session. Read this first, then the research
 notes it links to. The notes hold the evidence; this file holds the decisions and the plan.
 
