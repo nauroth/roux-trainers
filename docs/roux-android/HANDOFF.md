@@ -69,8 +69,10 @@ Run the `grilling` skill on these, one at a time, leading with the recommendatio
    built first.
 7. **Smart-cube priority.** Research put native BLE (GAN/MoYu/QiYi) and automatic Roux splits
    at v1. Ask whether the user owns a smart cube and which model.
-8. **Personal or organization Play account.** Decide this before the first paid feature
-   ships. A personal account that sells anything shows the developer's **full address**
+8. **Personal or organization Play account.** **Update 2026-10-29: the user chose a personal
+   account and accepts the public address.** Their local business-permit, social-security and
+   tax setup is theirs to arrange before the first paid feature ships; a summary was given in
+   chat. Background below. A personal account that sells anything shows the developer's **full address**
    publicly on Google Play. An organization account (needs a registered business and a
    D-U-N-S number) shows the business's legal address instead. Payments profiles reject PO
    boxes. See the "Play account setup" section of
