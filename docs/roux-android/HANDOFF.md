@@ -55,6 +55,16 @@ Run the `grilling` skill on these, one at a time, leading with the recommendatio
    built first.
 7. **Smart-cube priority.** Research put native BLE (GAN/MoYu/QiYi) and automatic Roux splits
    at v1. Ask whether the user owns a smart cube and which model.
+8. **Monetization.** Research ([monetization.md](research/monetization.md)) recommends:
+   - A free app, with everything ported from roux-trainers kept free.
+   - An optional one-time "Supporter" unlock (plus optional tip purchases) through Play
+     Billing, covering new extras only.
+   - The Ko-fi link only on GitHub, the website and a non-Play build flavor. Donation links
+     inside the Play build get rejected.
+   - No ads and no paid-upfront price. Note that a free app can never later become paid on
+     the same package name.
+
+   Ask onionhoney before monetizing a derivative. The user hasn't decided yet.
 
 ## What exists now (branch `claude/eloquent-davinci-0yl5z1`)
 
@@ -68,6 +78,10 @@ Run the `grilling` skill on these, one at a time, leading with the recommendatio
     port assessment with `path:line` refs into this repo, licensing.
   - `timer-integration.md`: Twisty Timer / Cubic Timer analysis and the export format spec.
   - `design-plugins.md`: which design skills cover Compose/M3, and which to skip and why.
+  - `extra-skills.md`: nine more skills reviewed. Only Humanizer (store listing and in-app
+    copy) is worth installing.
+  - `monetization.md`: Play policy on donations, purchases, paid apps and ads, plus account
+    setup (closed test with 12 testers for 14 days) and GPL precedents.
 - `docs/roux-android/setup-android-sdk.sh`: idempotent SDK + Gradle-mirror setup (52 s fresh,
   0 s warm). Not wired up yet: hook it into a SessionStart hook or the environment setup
   script.
