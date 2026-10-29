@@ -36,9 +36,9 @@ web app.
   [roux-training-features.md §5](research/roux-training-features.md).
 
 - **Monetization (decided 2026-10-29):**
-  - The app is **free**, with **zero ads** and **zero telemetry**: no analytics, no
-    Crashlytics or Firebase, and nothing phoning home. The Play Data safety form must say "no
-    data collected".
+  - The app is **free**, with **zero ads**.
+  - **Crash reporting and usage analytics are wanted** for bug fixing and improvements. The
+    user reversed an earlier "zero telemetry" choice. Which tool and how is open decision 9.
   - Every training function is free. Paid features are only **cosmetic** (a one-time
     "Supporter" unlock for themes) or a **specific add-on** (possibly a paid smart-cube
     module). Never paywall a trainer, the solver or stats.
@@ -75,6 +75,21 @@ Run the `grilling` skill on these, one at a time, leading with the recommendatio
    D-U-N-S number) shows the business's legal address instead. Payments profiles reject PO
    boxes. See the "Play account setup" section of
    [monetization.md](research/monetization.md).
+   - The user is unhappy about the public address. They asked about a Luxembourg company to
+     stay anonymous; the answer was that it doesn't make them anonymous.
+     - A SARL-S must file each shareholder's identity and address in the public RCS
+       register, and it needs a Luxembourg business permit and head office.
+     - If it is run from home abroad, it is likely tax-resident there anyway.
+   - Cheaper path: ship the Play build with no purchases at all, so only name, country and
+     email are shown, and keep Ko-fi on GitHub. Revisit paid features once usage justifies
+     it. Ask which country the user lives in before advising further.
+9. **Crash reporting and analytics tool.** Recommendation, to verify:
+   - Play Console's Android vitals from day one: crash and ANR stack traces with no SDK.
+   - Plus one open-source SDK (ACRA, Sentry or PostHog; check current licenses and Android
+     SDK status) behind an **opt-in** prompt. EU ePrivacy rules likely require consent for
+     analytics anyway.
+   - No advertising ID, nothing personal, and everything declared in the Play Data safety
+     form. Make sure the non-Play (GitHub/F-Droid) build stays free of proprietary SDKs.
 
 ## What exists now (branch `claude/eloquent-davinci-0yl5z1`)
 
